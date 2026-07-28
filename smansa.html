@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas</title>
+</head>
+<style>
+    body{
+        display :flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: skyblue;
+        font-family: Arial, sans-serif;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border: 10px solid navajowhite;
+        border-radius: 30px;
+        padding: 30px;
+        background-color: white;
+        border-top: 5px black;
+    }
+    input, select, textarea, button {
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: 1px solid grey;
+
+    }
+    label {
+        margin-bottom: 5px;
+    }
+    h1 {
+        text-align: center;
+    }
+    button {
+        background-color: rgb(117, 160, 209);
+        color: black;
+    }
+    img {
+     width: 30%;
+     margin: 20px auto;
+    }
+
+</style>
+<body>
+ <form action="" method="post">
+    <img src="smansa.jpeg" alt="5px">
+        <h1>Pendaftaran Ekstrakurikuler</h1>
+        <label for="nama">Nama Lengkap Siswa</label>
+        <input type="text" name="nama" id="nama">
+        <label for="kategori">Nomor Induk Siswa (NIS)</label>
+        <input type="text" name="nama" id="nama">
+        <label for="kode">Jenis Kelamin</label>
+        <div>
+
+            <input type="radio" name="kondisi" id="baik">
+            <label>Laki-Laki</label>
+            <input type="radio" name="kondisi" id="rusak ringan">
+            <label>Perempuan</label>
+        </div>
+
+        <label for="kategori">Pilih Ekstrakurikuler 1 (utama)</label>
+        <select name="kategori" id="kategori">
+            <option disabled>Pilih salah satu!</option>
+            <option value="1">Pilih Ekskur Utama</option>
+            <option value="2">SJC</option>
+            <option value="3">SDA</option>
+            <option value="4">KIR IPA</option>
+        </select>
+
+         <label for="kategori">Pilih Ekstrakurikuler 2 (Cadangan)</label>
+        <select name="kategori" id="kategori">
+            <option disabled>Pilih salah satu!</option>
+            <option value="1">Pilih Ekskur Cadangan</option>
+            <option value="2">SJC</option>
+            <option value="3">SDA</option>
+            <option value="4">KIR IPA</option>
+        </select>
+
+        <label for="pesan">Alasan Memilih Ekskur Utama</label>
+        <textarea name="pesan" id="pesan"></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
